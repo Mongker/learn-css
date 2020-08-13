@@ -8,17 +8,15 @@ import ContentRight from './components/ContentRight/ContentRight'
 class App extends React.Component {
     render() {
         return (
-            <div className={'container'}>
-                <div className='header'>
-                    <h1>Header</h1>
+            <div className='content'>
+                <div className='content-left'>
+                    <div className={'content-headers'}>
+                        <div className={'content-avatar'} />
+                    </div>
+                    <div className={'content-between'} />
                 </div>
-                <div className='content'>
-                    <div className='content-left'>
-                        <h1>Content Left</h1>
-                    </div>
-                    <div className='content-right'>
-                        <ContentRight />
-                    </div>
+                <div className='content-right'>
+                    <ContentRight />
                 </div>
             </div>
         );
